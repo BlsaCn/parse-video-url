@@ -1,0 +1,27 @@
+{
+  "name": "blsacn/parse-video-url",
+  "description": "短视频无水印解析接口，支持各大平台去水印",
+  "keywords": [
+    "video",
+    "url",
+    "短视频",
+    "视频解析"
+  ],
+  "homepage": "https://github.com/BlsaCn/parse-video-url",
+  "authors": [
+    {
+      "name": "blsacn"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BlsaCn\\ParseVideoUrl\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "require": {
+    "php": ">=7.3",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.3"
+  }
+}
