@@ -48,7 +48,7 @@ class PiPiXia extends Base implements PlatformInterface
         $this->result['videoUrl'] = $item['origin_video_download']['url_list'][0]['url'] ?? '';
         $this->result['coverUrl'] = $item['cover']['download_list'][0]['url'] ?? '';
         $this->result['commentNum'] = $item['stats']['comment_count'] ?? 0;
-        $this->result['starNum'] = $item['stats']['like_count'] ?? 0;
+        $this->result['likeNum'] = $item['stats']['like_count'] ?? 0;
 
         return $this->result;
     }

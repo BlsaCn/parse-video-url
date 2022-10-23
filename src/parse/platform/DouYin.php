@@ -51,7 +51,7 @@ class DouYin extends Base implements PlatformInterface
 
         $this->result['coverUrl'] = $item['video']['origin_cover']['url_list'][0] ?? '';
         $this->result['commentNum'] = $item['statistics']['comment_count'] ?? 0;
-        $this->result['starNum'] = $item['statistics']['digg_count'] ?? 0;
+        $this->result['likeNum'] = $item['statistics']['digg_count'] ?? 0;
 
         return $this->result;
     }

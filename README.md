@@ -5,7 +5,7 @@
 
 ## 短视频去水印
 
-集成了：皮皮虾、抖音等等
+集成了：皮皮虾、抖音、西瓜、头条、哔哩哔哩、等等
 
 ## 安装
 
@@ -32,7 +32,7 @@ composer require blsacn/parse-video-url
     'videoUrl' => '',    // 视频播放地址
     'coverUrl' => '',    // 视频封面地址
     'commentNum' => 0,   // 评论数量
-    'starNum' => 0,      // 点赞数量
+    'likeNum' => 0,      // 点赞数量
 ]
 
 array(7) {
@@ -48,7 +48,7 @@ array(7) {
   string(183) "https://p3-ppx-sign.byteimg.com/tos-cn-p-0076/8151df2c97c0421596496e5b9900d339_1665892503~tplv-f3gpralwbh-logo.jpeg?x-expires=1697898173&x-signature=YmzTu4vXG7g%2BTFGkLQYH9W%2BeXF0%3D"
   ["commentNum"]=>
   int(306)
-  ["starNum"]=>
+  ["likeNum"]=>
   int(5193)
 }
 ```

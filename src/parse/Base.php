@@ -22,6 +22,6 @@ class Base
         'videoUrl' => '',    // 视频播放地址
         'coverUrl' => '',    // 视频封面地址
         'commentNum' => 0,   // 评论数量
-        'starNum' => 0,      // 点赞数量
+        'likeNum' => 0,      // 点赞数量
     ];
 }

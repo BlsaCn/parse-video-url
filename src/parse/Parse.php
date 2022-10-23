@@ -2,13 +2,19 @@
 
 namespace BlsaCn\ParseVideoUrl\parse;
 
+use BlsaCn\ParseVideoUrl\parse\platform\BiLiBiLi;
 use BlsaCn\ParseVideoUrl\parse\platform\DouYin;
 use BlsaCn\ParseVideoUrl\parse\platform\PiPiXia;
+use BlsaCn\ParseVideoUrl\parse\platform\TouTiao;
+use BlsaCn\ParseVideoUrl\parse\platform\XiGua;
 use DomainException;
 
 /**
- * @method static PiPiXia PiPiXia(string $url)
- * @method static DouYin DouYin(string $url)
+ * @method static PiPiXia PiPiXia(string $url)      皮皮虾
+ * @method static DouYin DouYin(string $url)        抖音
+ * @method static XiGua XiGua(string $url)          西瓜
+ * @method static TouTiao TouTiao(string $url)      头条
+ * @method static BiLiBiLi BiLiBiLi(string $url)    哔哩哔哩
  */
 class Parse
 {
@@ -46,7 +52,7 @@ class Parse
     public static function __callStatic(string $class, array $params)
     {
         $url = trim($params[0]);
-        $pattern = '/^(http|https):\/\/([0-9a-zA-Z_]+.)?([0-9a-zA-Z_]+)\.(com|cn|net|cc|com.cn|org).*?/';
+        $pattern = '/^(http|https):\/\/([0-9a-zA-Z_]+.)?([0-9a-zA-Z_]+)\.(tv|com|cn|net|cc|com.cn|org).*?/';
         if (!preg_match($pattern, $url)) {
             throw new DomainException('不是url，url验证失败', 1);
         }
